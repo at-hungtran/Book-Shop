@@ -1,0 +1,32 @@
+<main class="page-main">
+  <section class="section-shop-cart">
+    <div class="container">
+      <h4 class="title">Giỏ Hàng</h4>
+      <ul class="cart-list clearfix">
+        <li *ngFor="let product of productsShopCart" class="cart-item">
+          <div class="cart-item-border">
+            <ul class="cart-item-info-list">
+              <li class="info-item col-sm-4">
+                <div class="image-product-wrap">
+                  <img src="./assets/images/{{product.image}}" alt="product">
+                </div>
+              </li>
+              <li class="info-item col-sm-4">
+                <div class="product-info">
+                  <span class="product-name">{{product.name}}</span>
+                  <p class="product-price">{{product.price}}</p>
+                </div>
+              </li>
+              <li class="info-item col-sm-4">
+                <span class="product-amount">Số Lượng: {{product.amount}}</span>
+              </li>
+              <li class="info-item col-sm-4">
+                <button (click)="removeTtem" class="btn btn-remove">hủy</button>
+              </li>
+            </ul>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </section>
+</main>

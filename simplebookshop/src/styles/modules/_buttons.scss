@@ -1,0 +1,22 @@
+.btn {
+  background: none;
+  outline: none;
+}
+
+.btn-remove {
+  width: 150px;
+  padding: 10px 0;
+  border: solid 1px;
+  border-radius: 5px;
+  border-color: $primary-color;
+  color: $primary-color;
+  font-size: 13px; 
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  font-weight: bold;
+  transition: all 200ms ease-in-out;
+  &:hover {
+    background: $primary-color;
+    color: white;
+  }
+}
